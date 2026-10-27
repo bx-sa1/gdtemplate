@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDBaseClass" format=3 uid="uid://tc3ai1t48n4i"]
+
+[ext_resource type="Script" uid="uid://ck575aqs1sbrb" path="res://addons/func_godot/src/fgd/func_godot_fgd_base_class.gd" id="1_prnuq"]
+
+[resource]
+script = ExtResource("1_prnuq")
+classname = "Angle"
+class_properties = Dictionary[String, Variant]({
+"angle": 0.0
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"angle": "Orientation in degrees."
+})
+metadata/_custom_type_script = "uid://ck575aqs1sbrb"

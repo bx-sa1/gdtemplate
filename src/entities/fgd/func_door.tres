@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDSolidClass" format=3 uid="uid://cbdpfiixs7qih"]
+
+[ext_resource type="Resource" uid="uid://csq4280ivy5sv" path="res://src/entities/fgd/base/Target.tres" id="1_5bt5a"]
+[ext_resource type="Resource" uid="uid://epge2or0lgpf" path="res://src/entities/fgd/base/TargetName.tres" id="2_l7y1g"]
+[ext_resource type="Script" uid="uid://5cow84q03m6a" path="res://addons/func_godot/src/fgd/func_godot_fgd_solid_class.gd" id="3_3xsru"]
+
+[resource]
+script = ExtResource("3_3xsru")
+classname = "func_door"
+base_classes = Array[Resource]([ExtResource("1_5bt5a"), ExtResource("2_l7y1g")])
+class_properties = Dictionary[String, Variant]({
+"locked": false,
+"move_time": 0.6,
+"move_type": {
+"ROTATE": 1,
+"SLIDE": 0
+},
+"trigger_range": 0.0,
+"displacement": Vector3(0.0,0.0,1.0),
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"move_type": ["How this mover will move", 1]
+})
+node_class = "Door"
+metadata/_custom_type_script = "uid://5cow84q03m6a"

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" format=3 uid="uid://bgfs3oxvgnhh8"]
+
+[ext_resource type="Resource" uid="uid://cc2wuqumpkqal" path="res://src/entities/fgd/base/Light.tres" id="1_gsem1"]
+[ext_resource type="Script" uid="uid://d1nwwgcrner8b" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class_display_descriptor.gd" id="2_5qhly"]
+[ext_resource type="Script" uid="uid://cxsqwtsqd8w33" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="3_msa2w"]
+
+[sub_resource type="GDScript" id="GDScript_uench"]
+script/source = "@tool
+extends OmniLight3D
+
+func _func_godot_apply_properties(props: Dictionary):
+	if \"energy\" in props:
+		light_energy = props[\"energy\"]
+	if \"_color\" in props:
+		light_color = props[\"_color\"]
+	if \"shadows\" in props:
+		shadow_enabled = props[\"shadows\"]
+		
+	if \"atten\" in props:
+		omni_attenuation = props[\"atten\"]
+	if \"range\" in props:
+		omni_range = props[\"range\"]
+"
+
+[resource]
+script = ExtResource("3_msa2w")
+script_class = SubResource("GDScript_uench")
+classname = "light_omni"
+base_classes = Array[Resource]([ExtResource("1_gsem1")])
+class_properties = Dictionary[String, Variant]({
+"atten": 1.0,
+"range": 5.0
+})
+node_class = "OmniLight3D"
+metadata/_custom_type_script = "uid://cxsqwtsqd8w33"

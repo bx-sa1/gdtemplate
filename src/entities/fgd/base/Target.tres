@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDBaseClass" format=3 uid="uid://csq4280ivy5sv"]
+
+[ext_resource type="Script" uid="uid://ck575aqs1sbrb" path="res://addons/func_godot/src/fgd/func_godot_fgd_base_class.gd" id="1_y17hc"]
+
+[resource]
+script = ExtResource("1_y17hc")
+classname = "Target"
+class_properties = Dictionary[String, Variant]({
+"target": &""
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"target": "Entity group to call the use function on when this entity is triggered."
+})
+metadata/_custom_type_script = "uid://ck575aqs1sbrb"

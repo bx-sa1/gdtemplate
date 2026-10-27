@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c038d87h6jovr"]
+
+[ext_resource type="Script" uid="uid://bemkhp0hvy3j5" path="res://src/core/main.gd" id="1_ivtyw"]
+[ext_resource type="PackedScene" uid="uid://2qyutrmoyyw" path="res://src/ui/loading_screen.tscn" id="2_x62ka"]
+[ext_resource type="PackedScene" uid="uid://dki45eiio5adg" path="res://src/ui/main_menu.tscn" id="3_w61mg"]
+[ext_resource type="PackedScene" uid="uid://dc2ma8x7gykpi" path="res://src/ui/pause_screen.tscn" id="4_q2b63"]
+
+[node name="Main" type="Node" unique_id=733914609]
+script = ExtResource("1_ivtyw")
+
+[node name="Systems" type="Node" parent="." unique_id=1571349556]
+
+[node name="World" type="Node3D" parent="." unique_id=554904693]
+
+[node name="Map" type="Node3D" parent="World" unique_id=247535772]
+unique_name_in_owner = true
+
+[node name="Entities" type="Node3D" parent="World" unique_id=1497959573]
+unique_name_in_owner = true
+
+[node name="LoadingScreen" parent="." unique_id=1325468931 instance=ExtResource("2_x62ka")]
+unique_name_in_owner = true
+
+[node name="MainMenu" parent="." unique_id=1736314815 instance=ExtResource("3_w61mg")]
+unique_name_in_owner = true
+
+[node name="PauseScreen" parent="." unique_id=250808389 instance=ExtResource("4_q2b63")]
+unique_name_in_owner = true

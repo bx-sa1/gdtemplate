@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" format=3 uid="uid://br5yo1sp8684b"]
+
+[ext_resource type="Resource" uid="uid://tc3ai1t48n4i" path="res://src/entities/fgd/base/Angle.tres" id="1_vvri2"]
+[ext_resource type="Resource" uid="uid://csq4280ivy5sv" path="res://src/entities/fgd/base/Target.tres" id="2_um7au"]
+[ext_resource type="Script" uid="uid://d1nwwgcrner8b" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class_display_descriptor.gd" id="3_wxpet"]
+[ext_resource type="Script" uid="uid://cxsqwtsqd8w33" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="4_gskno"]
+
+[sub_resource type="Resource" id="Resource_ox8en"]
+script = ExtResource("3_wxpet")
+display_asset_path = "model"
+metadata/_custom_type_script = "uid://d1nwwgcrner8b"
+
+[sub_resource type="GDScript" id="GDScript_hvuyo"]
+script/source = "@tool
+extends Node3D
+
+var current_model: Node3D
+
+func set_model(model_path: String) -> bool:
+	if current_model:
+		remove_child(current_model)
+		current_model.queue_free()
+		current_model = null
+
+	if FileAccess.file_exists(model_path) or FileAccess.file_exists(model_path + \".import\"):
+		var model_scene: PackedScene = ResourceLoader.load(model_path)
+		var model: Node3D = model_scene.instantiate()
+		add_child(model)
+		model.owner = get_owner()
+		current_model = model
+		return true
+
+	return false
+
+
+func _func_godot_apply_properties(props: Dictionary) -> void:
+	if props.has(\"model\"):
+		set_model(props[\"model\"])
+
+	if props.has(\"target\"):
+		var interactable: Interactable = get_tree().get_nodes_in_group(\"target_\"+props[\"target\"]).pop_back()
+		if interactable:
+			global_position = interactable.owner.global_position
+"
+
+[resource]
+script = ExtResource("4_gskno")
+script_class = SubResource("GDScript_hvuyo")
+display_descriptors = Array[ExtResource("3_wxpet")]([SubResource("Resource_ox8en")])
+classname = "misc_model"
+base_classes = Array[Resource]([ExtResource("1_vvri2"), ExtResource("2_um7au")])
+class_properties = Dictionary[String, Variant]({
+"model": ""
+})
+meta_properties = Dictionary[String, Variant]({
+"color": Color(0.8, 0.8, 0.8, 1),
+"model": "model",
+"size": AABB(-8, -8, -8, 8, 8, 8)
+})
+metadata/_custom_type_script = "uid://cxsqwtsqd8w33"

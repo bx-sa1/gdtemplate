@@ -1,0 +1,18 @@
+[submodule "ext/yard-godot"]
+	path = ext/yard-godot
+	url = https://github.com/elliotfontaine/yard-godot
+[submodule "ext/Gut"]
+	path = ext/Gut
+	url = https://github.com/bitwes/Gut
+[submodule "ext/func_godot_plugin"]
+	path = ext/func_godot_plugin
+	url = https://github.com/func-godot/func_godot_plugin
+[submodule "ext/limbo_console"]
+	path = ext/limbo_console
+	url = https://github.com/limbonaut/limbo_console
+[submodule "ext/gdtk"]
+	path = ext/gdtk
+	url = https://github.com/bx-sa1/gdtk.git
+[submodule "ext/phantom-camera"]
+	path = ext/phantom-camera
+	url = https://github.com/ramokz/phantom-camera

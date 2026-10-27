@@ -1,0 +1,16 @@
+[gd_resource type="Environment" format=3 uid="uid://blhex6yvjpwaw"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_p1gun"]
+energy_multiplier = 3.0
+
+[sub_resource type="Sky" id="Sky_n4y2n"]
+sky_material = SubResource("PhysicalSkyMaterial_p1gun")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_n4y2n")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 4
+ssao_enabled = true
+glow_enabled = true

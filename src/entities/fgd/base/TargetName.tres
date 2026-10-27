@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDBaseClass" format=3 uid="uid://epge2or0lgpf"]
+
+[ext_resource type="Script" uid="uid://ck575aqs1sbrb" path="res://addons/func_godot/src/fgd/func_godot_fgd_base_class.gd" id="1_xvxjv"]
+
+[resource]
+script = ExtResource("1_xvxjv")
+classname = "TargetName"
+class_properties = Dictionary[String, Variant]({
+"targetname": null
+})
+class_property_descriptions = Dictionary[String, Variant]({
+"targetname": "Adds this entity to a group with this targetname."
+})
+metadata/_custom_type_script = "uid://ck575aqs1sbrb"
