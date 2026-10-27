@@ -4,4 +4,10 @@
 
 [resource]
 script = ExtResource("1_s6t6d")
+classname = "Light"
+class_properties = Dictionary[String, Variant]({
+"_color": Color(1, 1, 1, 1),
+"energy": 1.0,
+"shadows": true
+})
 metadata/_custom_type_script = "uid://ck575aqs1sbrb"

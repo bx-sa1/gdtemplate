@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="FuncGodotFGDFile" format=3 uid="uid://cqxqc5aaon21e"]
 
-[ext_resource type="Resource" uid="uid://tc3ai1t48n4i" path="res://src/entities/fgd/base/Angle.tres" id="1_faphq"]
-[ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_ml7mm"]
-[ext_resource type="Resource" uid="uid://csq4280ivy5sv" path="res://src/entities/fgd/base/Target.tres" id="2_pyo6o"]
-[ext_resource type="Resource" uid="uid://epge2or0lgpf" path="res://src/entities/fgd/base/TargetName.tres" id="3_j4c2p"]
+[ext_resource type="Resource" uid="uid://tc3ai1t48n4i" path="res://src/entities/fgd/base/Angle.tres" id="1_cwoha"]
+[ext_resource type="Resource" uid="uid://csq4280ivy5sv" path="res://src/entities/fgd/base/Target.tres" id="2_05j6m"]
+[ext_resource type="Resource" uid="uid://epge2or0lgpf" path="res://src/entities/fgd/base/TargetName.tres" id="3_sry4w"]
+[ext_resource type="Resource" uid="uid://cc2wuqumpkqal" path="res://src/entities/fgd/base/Light.tres" id="4_cx6up"]
+[ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="5_3jkcj"]
 
 [resource]
-script = ExtResource("1_ml7mm")
-entity_definitions = Array[Resource]([ExtResource("1_faphq"), ExtResource("2_pyo6o"), ExtResource("3_j4c2p")])
+script = ExtResource("5_3jkcj")
+entity_definitions = Array[Resource]([ExtResource("1_cwoha"), ExtResource("2_05j6m"), ExtResource("3_sry4w"), ExtResource("4_cx6up")])
 metadata/_custom_type_script = "uid://drlmgulwbjwqu"

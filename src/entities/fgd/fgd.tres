@@ -1,12 +1,16 @@
 [gd_resource type="Resource" script_class="FuncGodotFGDFile" format=3 uid="uid://1u4q35h33h3h"]
 
-[ext_resource type="Resource" uid="uid://cqxqc5aaon21e" path="res://src/entities/fgd/base/base_fgd.tres" id="1_fvcun"]
-[ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_rsox1"]
-[ext_resource type="Resource" path="res://entities/fgd/env_sun.tres" id="3_oxwao"]
-[ext_resource type="Resource" uid="uid://br5yo1sp8684b" path="res://src/entities/fgd/misc_model.tres" id="3_usgsx"]
+[ext_resource type="Resource" uid="uid://cqxqc5aaon21e" path="res://src/entities/fgd/base/base_fgd.tres" id="1_wrp25"]
+[ext_resource type="Resource" uid="uid://b0i5rviknjv1w" path="res://src/entities/fgd/worldspawn.tres" id="2_00jqv"]
+[ext_resource type="Resource" uid="uid://br5yo1sp8684b" path="res://src/entities/fgd/misc_model.tres" id="3_3gt4t"]
+[ext_resource type="Resource" uid="uid://bgfs3oxvgnhh8" path="res://src/entities/fgd/light_omni.tres" id="4_xj4u5"]
+[ext_resource type="Resource" uid="uid://denekseumyq6e" path="res://src/entities/fgd/func_button.tres" id="5_imi4l"]
+[ext_resource type="Resource" uid="uid://cbdpfiixs7qih" path="res://src/entities/fgd/func_door.tres" id="6_0qign"]
+[ext_resource type="Resource" uid="uid://bsjnhnk14lwok" path="res://src/entities/fgd/trigger_once.tres" id="7_j81nl"]
+[ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="8_2vj7g"]
 
 [resource]
-script = ExtResource("1_rsox1")
-base_fgd_files = Array[Resource]([ExtResource("1_fvcun")])
-entity_definitions = Array[Resource]([ExtResource("3_usgsx"), ExtResource("3_oxwao")])
+script = ExtResource("8_2vj7g")
+base_fgd_files = Array[Resource]([ExtResource("1_wrp25")])
+entity_definitions = Array[Resource]([ExtResource("2_00jqv"), ExtResource("3_3gt4t"), ExtResource("4_xj4u5"), ExtResource("5_imi4l"), ExtResource("6_0qign"), ExtResource("7_j81nl")])
 metadata/_custom_type_script = "uid://drlmgulwbjwqu"

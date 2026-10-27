@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="FuncGodotFGDPointClass" format=3 uid="uid://br5yo1sp8684b"]
 
-[ext_resource type="Resource" uid="uid://tc3ai1t48n4i" path="res://src/entities/fgd/base/Angle.tres" id="1_vvri2"]
-[ext_resource type="Resource" uid="uid://csq4280ivy5sv" path="res://src/entities/fgd/base/Target.tres" id="2_um7au"]
-[ext_resource type="Script" uid="uid://d1nwwgcrner8b" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class_display_descriptor.gd" id="3_wxpet"]
-[ext_resource type="Script" uid="uid://cxsqwtsqd8w33" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="4_gskno"]
+[ext_resource type="Resource" uid="uid://tc3ai1t48n4i" path="res://src/entities/fgd/base/Angle.tres" id="1_s333l"]
+[ext_resource type="Resource" uid="uid://csq4280ivy5sv" path="res://src/entities/fgd/base/Target.tres" id="2_uvutn"]
+[ext_resource type="Script" uid="uid://d1nwwgcrner8b" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class_display_descriptor.gd" id="3_sv04o"]
+[ext_resource type="Script" uid="uid://cxsqwtsqd8w33" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="4_w232g"]
 
 [sub_resource type="Resource" id="Resource_ox8en"]
-script = ExtResource("3_wxpet")
+script = ExtResource("3_sv04o")
 display_asset_path = "model"
 metadata/_custom_type_script = "uid://d1nwwgcrner8b"
 
@@ -44,11 +44,11 @@ func _func_godot_apply_properties(props: Dictionary) -> void:
 "
 
 [resource]
-script = ExtResource("4_gskno")
+script = ExtResource("4_w232g")
 script_class = SubResource("GDScript_hvuyo")
-display_descriptors = Array[ExtResource("3_wxpet")]([SubResource("Resource_ox8en")])
+display_descriptors = Array[ExtResource("3_sv04o")]([SubResource("Resource_ox8en")])
 classname = "misc_model"
-base_classes = Array[Resource]([ExtResource("1_vvri2"), ExtResource("2_um7au")])
+base_classes = Array[Resource]([ExtResource("1_s333l"), ExtResource("2_uvutn")])
 class_properties = Dictionary[String, Variant]({
 "model": ""
 })

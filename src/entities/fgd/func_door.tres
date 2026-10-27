@@ -9,17 +9,17 @@ script = ExtResource("3_3xsru")
 classname = "func_door"
 base_classes = Array[Resource]([ExtResource("1_5bt5a"), ExtResource("2_l7y1g")])
 class_properties = Dictionary[String, Variant]({
+"displacement": Vector3(0, 0, 1),
 "locked": false,
 "move_time": 0.6,
 "move_type": {
 "ROTATE": 1,
 "SLIDE": 0
 },
-"trigger_range": 0.0,
-"displacement": Vector3(0.0,0.0,1.0),
+"trigger_range": 0.0
 })
 class_property_descriptions = Dictionary[String, Variant]({
 "move_type": ["How this mover will move", 1]
 })
-node_class = "Door"
+node_class = "FuncDoor"
 metadata/_custom_type_script = "uid://5cow84q03m6a"
